@@ -1,0 +1,537 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: grey;
+    
+    
+}
+
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+
+p{
+    font-size: 25px;
+    color: gold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 50%;
+    height: 0.5rem;
+    background-color: rgb(93, 81, 99);
+    border: none;
+    margin: 3rem auto;
+}
+
+.text-silver {
+    color: gold;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Nav bar*/
+
+.nav {
+    
+    background: black;
+    padding: 0 2rem 1rem;
+    height: 0rem;
+    min-height: 8vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: rgb(175, 175, 175);
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    margin: 0;
+    display: flex;
+    color: rgb(175, 175, 175);
+}
+
+.nav .nav-brand a {
+    font-size: 1.5rem;
+    padding: 1rem 0; 
+    display: block;
+    font-family: sitetitle;
+    font-size: 1.5rem;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1rem;
+    position: relative;
+    
+    font-size: 1.1rem;
+    color: rgb(175, 175, 175);
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: rgb(163, 139, 0);
+}
+
+
+
+.nav .nav-items .nav-link:hover a {
+    color: rgb(175, 175, 175);
+}
+
+.nav .social-media {
+    padding: 1.4rem 0;
+
+}
+
+.nav .social-media i {
+    padding: 0.1rem;
+    color: rgb(175, 175, 175);
+}
+
+.nav .social-media i:hover {
+    color:rgb(163, 139, 0);
+
+}
+
+/* Nav Bar close*/
+
+/*landing page open*/
+
+main .site-title {
+    background-image: url("./media/marc-olivier-jodoin-tauPAnOIGvE-unsplash-wide.jpg");
+    background-size: cover;
+    height: 90vh;
+    background-position: top;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    filter: brightness(55%);
+    padding-top: 10rem;
+    
+}
+
+main .site-title .site-background {
+    color: gold;
+    
+    
+}
+
+main .site-title h1 {
+    
+    margin: auto;
+    font-family: 'josephine', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+main .site-title h3 {
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+main .site-title .btn {
+    text-align: center;
+    background: gold;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    margin: 5vh 20vh;
+    cursor: pointer;
+}
+
+main .site-title .btn:hover {
+    background: rgb(138, 83, 163);
+    border: 1px solid white;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.25s ease-in-out;
+    
+}
+
+button.btn {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sitetitle;
+    cursor: pointer;
+}
+
+/*landing page close*/
+
+/*About me open*/
+
+main #about-me {
+    
+    margin: 2rem;
+    text-align: center;
+}
+
+main #about-me .flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main #about-me .carousel-container {
+    width: 300px;
+    position: relative;  
+    margin: auto;
+    overflow: hidden;
+    border: 10px solid rgb(163, 139, 0);
+    background-size: contain;
+}
+
+main #about-me .carousel-container img {
+    object-fit: cover;
+}
+
+main #about-me .carousel-container .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+#about-me .carousel-container #prev-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 2.2rem;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#about-me .carousel-container #next-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 2.2rem;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*About me end*/
+
+/*Services starr*/
+
+main #my-services {
+    margin: 2rem;
+}
+
+main #my-services .flex-row {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*main #my-services .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}*/
+
+main #my-services .spirit-coach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main #my-services .spirit-coach h3 {
+    color: purple;
+    font-size: 2.1rem;
+    
+}
+
+main #my-services .first-column {
+    width: 33.33%;
+    justify-content: center;
+}
+
+main #my-services .first-column img {
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+main #my-services .second-column {
+    width: 33.33%;    
+}
+
+main #my-services .second-column img {
+    width: 90%;
+    height: 50%;
+    border-radius: 50%;
+}
+main #my-services .third-column {
+    width: 33.33%;
+    
+}
+
+main #my-services .third-column img {
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+/*my services close*/
+
+/*Testimonials open*/
+
+main #testimonials {
+    margin: 2rem;
+}
+
+main #testimonials .all-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main #testimonials .all-testimonials .first-row-testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    column-gap: 5rem;
+}
+main #testimonials .all-testimonials .second-row-testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    column-gap: 5rem;
+}
+
+main #testimonials .all-testimonials .third-row-testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    column-gap: 5rem;
+}
+
+/*Testimonials close*/
+
+/*Contact me open*/
+main #contact-me {
+    padding: 1rem 5rem 1rem 0;
+    background-image: url(./media/IMG-20210916-WA0032.jpg);
+    background-size: cover;
+    height: 120vh;
+    background-position: top;
+    background-size: cover;
+    background-image: no-repeat;
+}
+
+main #contact-me h2{
+margin: 4rem 2rem;
+}
+
+main #contact-me .contact-me {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    color: white;
+    max-width: 500px;
+    line-height: 3.5rem;
+    padding-left: 3rem;
+    font-size: 1.3rem;
+}
+
+.contact-info i {
+    margin-right: 1.5rem;
+    font-size: 2rem;
+
+}
+
+.contact-form {
+    max-width: 700px;
+    margin-right: 4rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.contact-form .text-box {
+    background: black;
+    color: white;
+    border: none;
+    width: calc(50% - 10px);
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.7rem;
+    opacity: 0.9;
+    width: 50%;
+}
+
+.contact-form .text-box:first-child {
+    margin-right: 1.2rem;
+}
+
+.contact-form textarea {
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    min-height: 150px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.7rem;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn {
+    float: right;
+    background: rgb(138, 83, 163);
+    color: white;
+    border: none;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: background;
+    cursor: pointer;
+}
+
+.contact-form .send-btn:hover {
+    background: rgb(163, 139, 0);
+}
+
+/*Contact me close*/
+
+/*Responsive open*/
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu, .nav .nav-items {
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+
+    main #testimonials .all-testimonials .first-row-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #testimonials .all-testimonials .second-row-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main #testimonials .all-testimonials .third-row-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    main #my-services .flex-row {
+        margin: 2rem 4rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #my-services .first-column {
+        width: 90%;
+          
+    }
+    main #my-services .second-column {
+        width: 90%;    
+    }
+    main #my-services .third-column {
+        width: 90%;    
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        margin: 2.2rem 4rem;
+    }
+
+    .contact-form .text-box {
+        width: 100%;
+    }
+}
